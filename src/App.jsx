@@ -8,7 +8,6 @@ import { useActiveAccount, useActiveWalletChain, ConnectButton } from 'thirdweb/
 import { createThirdwebClient } from 'thirdweb'
 import { defineChain } from 'thirdweb/chains'
 import { createWallet, walletConnect } from "thirdweb/wallets";
-import { GiBlackKnightHelm } from 'react-icons/gi'; // Import the icon
 import { AiFillStar } from 'react-icons/ai'; // Import Star icon for Utility
 import './components/ClaimButton.css';
 
@@ -56,9 +55,6 @@ function App() {
     setTasksCompleted(allComplete);
   };
 
-  // Placeholder for available count - replace with actual logic if needed
-  const availableCount = "1000+"; // Example placeholder
-  const totalCount = "Claimable"; // Example placeholder
   const utilityDescription = "Unlocks the Davinci Skin"; // Utility text
 
   return (
@@ -97,16 +93,6 @@ function App() {
             </p>
             {/* --- Info Containers --- */}
             <div className="info-container-wrapper">
-              <div className="info-container available-container">
-                <h5>
-                  <GiBlackKnightHelm className="icon" />
-                  Available:
-                </h5>
-                <h5>
-                  {availableCount} {totalCount}
-                </h5>
-              </div>
-              {/* --- Added Utility Container --- */}
               <div className="info-container utility-container">
                 <h5>
                   <AiFillStar className="icon" />
